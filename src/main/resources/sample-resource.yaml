@@ -1,0 +1,8 @@
+apiVersion: sample.javaoperatorsdk/v1
+kind: TestResource
+metadata:
+    name: test
+    namespace: default
+spec:
+    someString: "asöldkfj"
+    someInt: 42
