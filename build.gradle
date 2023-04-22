@@ -1,6 +1,6 @@
 plugins {
     id 'org.jetbrains.kotlin.jvm' version '1.7.10'
-    id "io.quarkus" version "2.12.0.Final"
+    id "io.quarkus" version "2.16.6.Final"
 }
 
 group = 'org.example'
@@ -12,11 +12,11 @@ repositories {
 
 dependencies {
     // import a BOM. The versions used in this file will override any other version found in the graph
-    implementation enforcedPlatform('io.quarkiverse.operatorsdk:quarkus-operator-sdk-bom:4.0.0')
-    implementation 'io.quarkiverse.operatorsdk:quarkus-operator-sdk:4.0.0'
+    implementation enforcedPlatform('io.quarkiverse.operatorsdk:quarkus-operator-sdk-bom:5.1.4')
+    implementation 'io.quarkiverse.operatorsdk:quarkus-operator-sdk:5.1.4'
 
     // Improves the interoperability between Kotlin and Jackson:
-    implementation "com.fasterxml.jackson.module:jackson-module-kotlin:2.13.+"
+    implementation "com.fasterxml.jackson.module:jackson-module-kotlin:2.14.2"
 }
 
 test {

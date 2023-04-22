@@ -8,6 +8,6 @@ import io.fabric8.kubernetes.model.annotation.Version
 @ShortNames("cs")
 class TestResource : CustomResource<TestResourceSpec, TestResourceStatus>()
 
-data class TestResourceSpec (val someString: String, val someInt: Int)
+data class TestResourceSpec(val someString: String, val someInt: Int)
 
 data class TestResourceStatus(val someBoolean: Boolean)
